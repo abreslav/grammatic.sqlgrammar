@@ -1,0 +1,14 @@
+def nonterminal(name : String, productions : List[Production])
+def production(expression : Expression)
+def symbolReference(symbol : Nonterminal)
+def stringLiteral(value : String)
+def characterRange(lowerBound : Char, upperBound : Char)
+def sequence(override expressions : List[Expression])
+def alternative(override expressions : List[Expression])
+def iteration(expression : Expression, multiplicity : Multiplicity)
+def empty
+
+def zeroOrOne
+def zeroOrMore
+def oneOrMore
+
