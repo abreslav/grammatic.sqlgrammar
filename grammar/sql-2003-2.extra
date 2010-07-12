@@ -1,0 +1,206 @@
+redefinitions
+<space> ::= 0x0020
+
+<identifier start> ::= [A-Za-z_]
+
+<identifier extend> ::= [0-9]
+
+<nondoublequote character> ::= [^"]
+
+<white space> ::= [0x0000-0x0020]
+
+<newline> ::= [0x000D0x000A] 
+
+<nonquote character> ::= [^']
+
+lexical
+<SQL terminal character>
+<SQL language character>
+<simple Latin letter>
+<simple Latin upper case letter>
+<simple Latin lower case letter>
+<digit>
+<SQL special character>
+<space>
+<double quote>
+<percent>
+<ampersand>
+<quote>
+<left paren>
+<right paren>
+<asterisk>
+<plus sign>
+<comma>
+<minus sign>
+<period>
+<solidus>
+<colon>
+<semicolon>
+<less than operator>
+<equals operator>
+<greater than operator>
+<question mark>
+<left bracket or trigraph>
+<right bracket or trigraph>
+<left bracket>
+<left bracket trigraph>
+<right bracket>
+<right bracket trigraph>
+<circumflex>
+<underscore>
+<vertical bar>
+<left brace>
+<right brace>
+<token>
+<nondelimiter token>
+<regular identifier>
+<identifier body>
+<identifier part>
+<delimited identifier>
+<delimited identifier body>
+<delimited identifier part>
+<identifier start>
+<identifier extend>
+<large object length token>
+<multiplier>
+<Unicode delimited identifier>
+<Unicode delimiter body>
+<Unicode identifier part>
+<Unicode escape value>
+<Unicode 4 digit escape value>
+<Unicode 6 digit escape value>
+<U escape character>
+<nondoublequote character>
+<doublequote symbol>
+<delimiter token>
+<not equals operator>
+<greater than or equals operator>
+<less than or equals operator>
+<concatenation operator>
+<right arrow>
+<double colon>
+<double period>
+<white space>
+<separator>
+<comment>
+<simple comment>
+<simple comment introducer>
+<slash>
+<bracketed comment>
+<bracketed comment introducer>
+<bracketed comment terminator>
+<bracketed comment contents>
+<comment character>
+<newline>
+<key word>
+<non-reserved word>
+<reserved word>
+<literal>
+<unsigned literal>
+<general literal>
+<character string literal>
+<introducer>
+<character representation>
+<nonquote character>
+<quote symbol>
+<national character string literal>
+<Unicode character string literal>
+<Unicode representation>
+<bit string literal>
+<bit>
+<hex string literal>
+<binary string literal>
+<hexit>
+<signed numeric literal>
+<unsigned numeric literal>
+<exact numeric literal>
+<sign>
+<approximate numeric literal>
+<mantissa>
+<exponent>
+<signed integer>
+<datetime literal>
+<date literal>
+<time literal>
+<timestamp literal>
+<date string>
+<time string>
+<timestamp string>
+<time zone interval>
+<date value>
+<time value>
+<interval literal>
+<interval string>
+<unquoted date string>
+<unquoted time string>
+<unquoted timestamp string>
+<unquoted interval string>
+<year-month literal>
+<day-time literal>
+<day-time interval>
+<time interval>
+<years value>
+<months value>
+<days value>
+<hours value>
+<minutes value>
+<seconds value>
+<seconds integer value>
+<seconds fraction>
+<datetime value>
+<boolean literal>
+<identifier>
+<actual identifier>
+<SQL language identifier>
+<SQL language identifier start>
+<SQL language identifier part>
+<authorization identifier>
+<table name>
+<domain name>
+<schema name>
+<catalog name>
+<unqualified schema name>
+<schema qualified name>
+<local or schema qualified name>
+<local or schema qualifier>
+<qualified identifier>
+<column name>
+<correlation name>
+<query name>
+<SQL-client module name>
+<procedure name>
+<schema qualified routine name>
+<method name>
+<specific name>
+<cursor name>
+<local qualified name>
+<local qualifier>
+<host parameter name>
+<SQL parameter name>
+<constraint name>
+<external routine name>
+<trigger name>
+<collation name>
+<character set name>
+<transliteration name>
+<transcoding name>
+<user-defined type name>
+<schema-resolved user-defined type name>
+<schema qualified type name>
+<attribute name>
+<field name>
+<savepoint name>
+<sequence generator name>
+<role name>
+<user identifier>
+<connection name>
+<SQL-server name>
+<connection user name>
+<SQL statement name>
+<statement name>
+<extended statement name>
+<dynamic cursor name>
+<extended cursor name>
+<descriptor name>
+<scope option>
+<window name>

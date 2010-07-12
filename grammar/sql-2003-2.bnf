@@ -5238,7 +5238,7 @@ set.
 		SET COLLATION <collation specification> [ FOR <character set specification list> ]
 	|	SET NO COLLATION [ FOR <character set specification list> ]
 
-<character set specification list> ::= <character set specification> [ , <character set specification>... ]
+--!! Removed (a duplicate): <character set specification list> ::= <character set specification> [ , <character set specification>... ]
 
 <collation specification> ::= <value specification>
 
