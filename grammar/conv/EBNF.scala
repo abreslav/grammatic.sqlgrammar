@@ -1,12 +1,12 @@
 package ebnf {
   case class Grammar(val symbols : List[Symbol])
   
-  sealed abstract class SymbolKind
+  sealed abstract class SymbolKind(val lexical : Boolean)
   object SymbolKind {
-    case object Nonterminal extends SymbolKind
-    case object LexicalHelper extends SymbolKind
-    case object Terminal extends SymbolKind
-    case object NoKind extends SymbolKind
+    case object Nonterminal extends SymbolKind(false)
+    case object LexicalHelper extends SymbolKind(true)
+    case object Terminal extends SymbolKind(true)
+    case object NoKind extends SymbolKind(false)
   }
   
   case class Symbol(val kind : SymbolKind, val name : String, val definition : Expression)
@@ -19,6 +19,7 @@ package ebnf {
   case class Unknown(contents : String) extends Expression
   case class Optional(expression : Expression) extends Expression
   case class Iterated(expression : Expression) extends Expression
+  case class OptIter(expression : Expression) extends Expression
   case class Range(negative : Boolean, subranges : List[(Char, Char)]) extends Expression
   
   object Many {
@@ -33,6 +34,7 @@ package ebnf {
     def unapply(e : Expression) = e match {
       case Iterated(e) => Some(e)
       case Optional(e) => Some(e)
+      case OptIter(e) => Some(e)
       case _ => None
     }
   }
